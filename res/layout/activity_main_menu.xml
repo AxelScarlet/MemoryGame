@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:padding="16dp">
+
+    <!-- Title at the top -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center" />
+
+    <!-- Welcome message -->
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Menu buttons centered vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvWelcomeMessage"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnPlayGame"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Play Game"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnInstructions"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnLeaderboard"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCredit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Credit"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnManageUsers"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Manage Users"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Logout" />
+    </LinearLayout>
+</RelativeLayout>

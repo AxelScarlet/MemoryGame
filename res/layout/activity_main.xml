@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_app"
+    android:padding="16dp">
+
+    <!-- Title for Nickname Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select a Nickname"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <!-- TextView to display User ID -->
+    <TextView
+        android:id="@+id/user_id_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+    <!-- Box for displaying nicknames -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/box_background"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!-- ListView to display nicknames -->
+        <ListView
+            android:id="@+id/nickname_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Button to proceed to play the game -->
+    <Button
+        android:id="@+id/button_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Play"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Button to navigate to ManageUsersActivity -->
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Nickname"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

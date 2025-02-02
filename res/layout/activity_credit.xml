@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:background="@drawable/bg_app">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/creditsTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Credits" />
+
+            <!-- Credits TextView -->
+            <TextView
+                android:id="@+id/creditsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:text="" /> <!-- Initially empty -->
+
+            <!-- Project Manager Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_background"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/projectManagerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Manager"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/projectManagerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- Developer Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_background"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/developerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/developerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- QA Tester Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_background"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/qaTesterTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QA Tester"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/qaTesterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- Documentation Specialist Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_background"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/documentationTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Documentation and Support Specialist"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/documentationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:text="" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

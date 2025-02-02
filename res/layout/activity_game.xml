@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_app">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tv_selected_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Welcome to the game!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Game Title -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Matching Game"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_selected_nickname" />
+
+    <!-- Score Display -->
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="00:00:000"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Game Status Display -->
+    <TextView
+        android:id="@+id/textViewGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Press Start to Begin!"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView" />
+
+    <!-- 4x4 ImageView Grid -->
+    <RelativeLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGameStatus"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Row 1 -->
+        <ImageView
+            android:id="@+id/imageViewCard0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_back01"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/imageViewCard1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard0"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/imageViewCard2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard1"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/imageViewCard3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard2"
+            android:layout_alignParentTop="true" />
+
+        <!-- Row 2 -->
+        <ImageView
+            android:id="@+id/imageViewCard4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/imageViewCard0" />
+
+        <ImageView
+            android:id="@+id/imageViewCard5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard4"
+            android:layout_below="@id/imageViewCard1" />
+
+        <ImageView
+            android:id="@+id/imageViewCard6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard5"
+            android:layout_below="@id/imageViewCard2" />
+
+        <ImageView
+            android:id="@+id/imageViewCard7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard6"
+            android:layout_below="@id/imageViewCard3" />
+
+        <!-- Row 3 -->
+        <ImageView
+            android:id="@+id/imageViewCard8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/imageViewCard4" />
+
+        <ImageView
+            android:id="@+id/imageViewCard9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard8"
+            android:layout_below="@id/imageViewCard5" />
+
+        <ImageView
+            android:id="@+id/imageViewCard10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard9"
+            android:layout_below="@id/imageViewCard6" />
+
+        <ImageView
+            android:id="@+id/imageViewCard11"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard10"
+            android:layout_below="@id/imageViewCard7" />
+
+        <!-- Row 4 -->
+        <ImageView
+            android:id="@+id/imageViewCard12"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/imageViewCard8" />
+
+        <ImageView
+            android:id="@+id/imageViewCard13"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard12"
+            android:layout_below="@id/imageViewCard9" />
+
+        <ImageView
+            android:id="@+id/imageViewCard14"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard13"
+            android:layout_below="@id/imageViewCard10" />
+
+        <ImageView
+            android:id="@+id/imageViewCard15"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back01"
+            android:layout_toEndOf="@id/imageViewCard14"
+            android:layout_below="@id/imageViewCard11" />
+    </RelativeLayout>
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- Reset Game Button -->
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_below="@id/buttonStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
